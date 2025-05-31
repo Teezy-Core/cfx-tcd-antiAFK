@@ -19,8 +19,16 @@ server_scripts {
 }
 
 ui_page 'web/index.html'
+
 files {
     'web/**/*'
+}
+
+escrow_ignore {
+    'client/*',
+    'server/*',
+    'web/*',
+    'config.lua',
 }
 
 lua54 'yes'
